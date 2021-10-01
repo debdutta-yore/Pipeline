@@ -45,6 +45,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun calculateSum(first: Int, second: Int): Int {
-        return first + second
+        return Calculator.sum(first, second)
     }
 }
