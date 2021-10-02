@@ -102,3 +102,6 @@ jobs:
         with:
           name: expense-manager.apk
           path: app/build/outputs/apk/debug/app-debug.apk
+          env-url: apk_url
+      - name: Use URL for something
+        run: echo "${{ env.apk_url }}"
