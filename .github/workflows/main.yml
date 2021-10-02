@@ -57,6 +57,12 @@ jobs:
       - name: Checkout the code
         uses: actions/checkout@v2
 
+      - name: Seup Java
+        uses: actions/setup-java@v2
+        with:
+          distribution: 'temurin' # See 'Supported distributions' for available options
+          java-version: '11'
+
       - name: Make gradlew executable
         run: chmod +x ./gradlew
 
